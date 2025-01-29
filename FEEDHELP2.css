@@ -1,0 +1,121 @@
+<html lang="en">
+ <head><style type="text/css" id="dcoder_stylesheet">css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}</style></head>
+ <body>
+  html 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>FeedHope - Donate Food to Those in Need</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <header> 
+   <h1>FeedHope</h1> 
+   <nav> 
+    <ul> 
+     <li><a href="#home">Home</a></li> 
+     <li><a href="#how-it-works">How It Works</a></li> 
+     <li><a href="#donate">Donate Food</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <main> 
+   <section id="home"> 
+    <h2>Welcome to FeedHope</h2> 
+    <p>Join us in our mission to feed those in need. Donate food to help make a difference in someone's life.</p> 
+   </section> 
+   <section id="how-it-works"> 
+    <h2>How It Works</h2> 
+    <ol> 
+     <li>Select the food items you want to donate.</li> 
+     <li>Enter the delivery address where the food should go.</li> 
+     <li>Make your payment and submit your order.</li> 
+     <li>We will take care of the delivery to those in need!</li> 
+    </ol> 
+   </section> 
+   <section id="donate"> 
+    <h2>Donate Food</h2> 
+    <form> <label for="food-item">Food Item:</label> 
+     <input type="text" id="food-item" name="food-item" required> <label for="quantity">Quantity:</label> 
+     <input type="number" id="quantity" name="quantity" required> <label for="address">Delivery Address:</label> 
+     <input type="text" id="address" name="address" required> <label for="payment">Payment Amount:</label> 
+     <input type="number" id="payment" name="payment" required> <button type="submit">Donate Now</button> 
+    </form> 
+   </section> 
+   <section id="contact"> 
+    <h2>Contact Us</h2> 
+    <p>For any inquiries, please reach out to us at <a href="mailto:info@feedhope.com">info@feedhope.com</a>.</p> 
+   </section> 
+  </main> 
+  <footer> 
+   <p>© 2025 FeedHope. All rights reserved.</p> 
+  </footer> 
+ 
+</body></html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FeedHope</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?food,donation') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bill {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}</style></head>
+<body>
+    <header>
+        <h1>FeedHope - Payment</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Choose Your Payment Method</h2>
+            <p>Total Amount: ₹<span id="total-amount"></span></p>
+            <ul>
+                <li><button onclick="alert('Redirecting to PhonePe')">PhonePe</button></li>
+                <li><button onclick="alert('Redirecting to Paytm')">Paytm</button></li>
+                <li><button onclick="alert('Redirecting to Google Pay')">Google Pay</button></li>
+                <li><button onclick="alert('Redirecting to Card Payment')">Pay by Card</button></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 FeedHope. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Placeholder for total amount
+        const totalAmount = localStorage.getItem('totalAmount') || '0';
+        document.getElementById('total-amount').innerText = totalAmount;
+    </script>
+
+</body></html>
